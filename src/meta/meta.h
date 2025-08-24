@@ -6,6 +6,8 @@
 #include "../util/reader_text.h"
 #include "../util/sf_utils.h"
 #include "../util/log.h"
+#include "asrc.h"
+
 
 typedef VGMSTREAM* (*init_vgmstream_t)(STREAMFILE* sf);
 
@@ -1040,4 +1042,5 @@ VGMSTREAM* init_vgmstream_mhwk(STREAMFILE* sf);
 
 VGMSTREAM* init_vgmstream_cf_df(STREAMFILE* sf);
 
+VGMSTREA,* init_vgmstream_asrc(STREAMFILE* sf);
 #endif
